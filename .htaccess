@@ -1,0 +1,6 @@
+
+ErrorDocument 404 https://uacpa.clowwd.com/404.html
+
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
